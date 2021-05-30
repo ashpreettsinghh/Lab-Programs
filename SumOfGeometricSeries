@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main() 
+{
+int no, sum=0,term,cr;
+printf("enter starting number.no of terms, common ratio \n ");
+scanf("%d",&no);
+scanf("%d",&term);
+scanf("%d",&cr);
+if(cr>1)
+sum=no*(pow(cr,term)-1)/(cr-1);
+
+else
+sum=no*(1-pow(cr,term))/(1-cr);
+printf("%d",sum);
+
+return 0;
+}
